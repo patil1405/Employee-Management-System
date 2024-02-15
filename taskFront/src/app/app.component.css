@@ -1,0 +1,21 @@
+.background{
+    height: 100vw;
+    width: 100vw;
+    background-image: url(../assets/images/bg.jpg);
+    background-size: contain;
+}
+.navbar-brand
+{
+  font-size: 40px;
+  font-family:'Times New Roman', Times, serif;  
+}
+
+.color{
+  background-color: black;
+}
+
+.center {
+  
+  justify-content: center;
+}
+

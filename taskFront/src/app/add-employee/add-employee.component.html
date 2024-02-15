@@ -1,0 +1,55 @@
+
+
+
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6 offset-md-3">
+    <div class="container bg" ><br>
+<h3 style="text-align: left; text-decoration: underline;">Add-Employee</h3>
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <br>
+      <label>Employee Name</label><br>
+      <input type="text" class="form-control" id="empName" required
+      [(ngModel)]="employee.empName" [ngModelOptions]="{standalone: true}"  placeholder="Enter full name"></div>
+      
+
+    <div class="form-group" style="margin-top: 15px;">
+        <label>Department</label>
+        <input type="text" class="form-control" id="empDept" required
+        [(ngModel)]="employee.empDept"  [ngModelOptions]="{standalone: true}" placeholder="Department"></div>
+        
+
+    <div class="form-group" style="margin-top: 15px;">
+            <label>Age</label>
+            <input type="number" class="form-control" id="age" required
+            [(ngModel)]="employee.age" [ngModelOptions]="{standalone: true}" placeholder="Enter age"></div>
+            
+
+    <div class="form-group" style="margin-top: 15px;">
+                <label>Date of Joining</label>
+                <input type="date"   class="form-control" id="empDOJ" required
+                [(ngModel)]="employee.empDOJ" [ngModelOptions]="{standalone: true}"  placeholder="yyyy-mm-dd"></div>
+                
+      
+    <div class="form-group" style="margin-top: 15px;">
+                <label>Email address</label>
+                <input type="text"  class="form-control" id="contactDetails.email" required
+                [(ngModel)]="employee.contactDetails.email" [ngModelOptions]="{standalone: true}"  placeholder="Enter e-mail address"></div>
+                
+    <div class="form-group" style="margin-top: 15px;"  >
+                <label>Mobile Number</label>
+                <input type="number"   class="form-control" id="contactDetails.mbno" required
+                [(ngModel)]="employee.contactDetails.mbno" [ngModelOptions]="{standalone: true}"  placeholder="Enter Mobile number"></div>
+                <br>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button (click)="gotoHomePage()"  class="btn btn-secondary"  style="margin-left: 20px;">Go back to HomePage</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  

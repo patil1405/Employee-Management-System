@@ -1,0 +1,57 @@
+
+<div class="container" >
+    <br>
+    <br>
+
+<h3 class="center"  style="text-decoration: underline; text-align: left;">All Employees List</h3>
+
+<br>
+<br>
+<div class="container center" style=" height:400px; overflow-y: auto;" >
+<table border-collapse: collapse  class="table table-stripped center" >
+    
+   
+<thead style="position: sticky; top: 0;" class="table head-dark">
+       
+    <tr>
+        
+        <th >ID</th>
+        <th >Name</th>
+        <th >Department</th>
+        <th>Age</th>
+        <th >Date of joining</th>
+        <th>Actions</th>
+       
+   
+    </tr>
+
+</thead>
+
+<tbody>
+    <tr *ngFor="let employee of employees">
+        <td >{{employee.empId}}</td>
+        <td >{{employee.empName}}</td>
+        <td >{{employee.empDept}}</td>
+        <td >{{employee.age}}</td>
+        <td >{{employee.empDOJ}}</td>
+        <td>
+            <button (click)="updateEmployee(employee.empId)" class="btn btn-success">Update</button>
+            <button (click)="deleteEmployee(employee.empId)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+            <button (click)="findEmployee(employee.empId)" class="btn btn-info" style="margin-left: 10px;">View</button>
+        </td>
+       
+    </tr>
+
+</tbody>
+
+
+
+    </table>
+   
+</div>
+<br>
+<button (click)="gotoHomePage()"  class="btn btn-secondary"  style="margin-left: 20px;">Go back</button>
+</div>
+
+
+

@@ -1,0 +1,44 @@
+
+<div  class="container" class="center"  *ngIf="employee" >
+    <br><br><br>
+    <h4 style="text-decoration: underline;">Employee details</h4>
+    <br><br>
+    <div class="container" style="width: fit-content; justify-content: center;">
+        <div class="justify" >
+        <div>
+            <label style="width: 180px; font-size: me ;"><b>Id: </b></label >{{employee.empId}}
+                
+        </div>
+        <br>
+        <div>
+            <label style="width: 180px;font-size: medium;"><b>Name: </b></label>{{employee.empName}}
+
+        </div>
+        <br>
+        <div>
+            <label style="width: 180px;font-size: medium;"><b>Department: </b></label>{{employee.empDept}}
+        </div>
+        <br>
+        <div>            
+            <label style="width: 180px;font-size: medium;"><b>Age: </b></label>{{employee.age}}
+        </div>
+        <br>
+        <div>
+            <label style="width: 180px;font-size:medium;"><b>Date-of-Joining: </b></label>{{employee.empDOJ}}
+        </div>
+        <br>
+        <div>
+            <label style="width: 180px;font-size:medium;"><b>Email id: </b></label>{{employee.contactDetails.email}}
+        </div>
+        <br>
+        <div>
+            <label style="width: 180px;font-size:medium;"><b>Mobile number: </b></label>{{employee.contactDetails.mbno}}
+        </div>
+    <br>
+    <br>
+    <br>
+</div>
+    </div>
+    <button (click)="gotoAllEmployee()"  class="btn btn-secondary"  style="margin-left: 20px;">Go back</button>
+</div>
+    

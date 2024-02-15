@@ -1,0 +1,19 @@
+.center {
+  text-align: center;
+  position:relative;
+  
+  margin-left:inherit;
+  margin-right: auto;
+}
+
+
+.justify{
+  
+  text-align: left;
+  
+}
+
+.position{
+  justify-content: center;
+
+}
