@@ -16,8 +16,9 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
-	  <packaging>war</packaging>
+	
 	<project>
+<packaging>war</packaging>
 
 </project>
 	<dependencies>
