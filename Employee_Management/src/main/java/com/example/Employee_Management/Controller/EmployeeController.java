@@ -14,7 +14,7 @@ import java.util.Optional;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:9091/manager/text/list")
 
 public class EmployeeController {
 
